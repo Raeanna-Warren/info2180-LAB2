@@ -1,0 +1,125 @@
+
+body {
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    margin: 0;
+}
+
+ .container {
+    display: grid;
+    grid-template-columns: 1fr 300px; 
+    grid-template-areas:
+        "header header"
+        "main   sidebar"
+        "footer footer";
+    height: 100vh;
+    grid-gap: 2rem;
+    max-width: 1500px;
+    
+}
+
+header {
+    grid-area: header;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    flex-direction:column;
+}
+
+img.profile-image {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    margin-bottom: 10px;
+    object-fit: cover; 
+   
+
+    
+}
+
+img.post-image{
+    width: 500px; 
+    height: 300px; 
+    display: flex;
+    float:right;
+  
+   
+}
+img.post-image2{
+    width: 500px; 
+    height: 300px; 
+    display: flex;
+    float:left;
+  
+   
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+aside {
+    grid-area: sidebar;
+    padding: 20px;
+}
+
+aside h2 {
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+aside .about {
+    color: #000000;
+}
+
+aside .about-section {
+    background-color: #E2E8F0;
+    padding: 15px;
+    border-radius: 8px;
+    
+}
+.about-section p {
+   margin-bottom: 15px;
+   line-height:1.5; 
+}
+
+h3.sidebar-headings {
+    color: #48BB78;
+    padding: 20px;
+   
+}
+
+main {
+    grid-area: main;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 32px;
+    color: #48BB78;
+}
+
+main date-author {
+    color: #718096;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: #2C5282;
+    color: #FFFFFF;
+    text-align:left;
+    padding: 15px ;
+}
+
+aside a {
+    color: #4299E1;
+}
+
